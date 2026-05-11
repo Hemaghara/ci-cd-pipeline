@@ -25,3 +25,7 @@ jobs:
       - name: Run Client Tests
         working-directory: ./client
         run: npm test
+
+      - name: Build Project
+        working-directory: ./client
+        run: npm run build
