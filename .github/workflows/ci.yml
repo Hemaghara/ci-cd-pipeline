@@ -18,8 +18,10 @@ jobs:
         with:
           node-version: 20
 
-      - name: Install Dependencies
+      - name: Install Client Dependencies
+        working-directory: ./client
         run: npm install
 
-      - name: Run Tests
+      - name: Run Client Tests
+        working-directory: ./client
         run: npm test
