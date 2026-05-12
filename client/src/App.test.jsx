@@ -7,3 +7,4 @@ test('renders hello', () => {
   const headingElement = screen.getByText('hello');
   expect(headingElement).toBeInTheDocument();
 });
+
